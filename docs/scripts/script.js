@@ -1,7 +1,3 @@
-function homepage(){
-    document.location.href = "./index.html"
-}
-
 let fatecanos = JSON.parse(localStorage.getItem("fatecanos"));
 
 let user = {
@@ -12,3 +8,5 @@ let user = {
     cpf: "",
     RA: ""
 }
+
+alert("Teste")
