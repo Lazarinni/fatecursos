@@ -34,13 +34,14 @@ header .pages{
 }
 
 header .pages .logo{
-    font-size: 1.25em;
+    font-size: 1.5em;
     color: aliceblue;
     margin-left: 25px;
     cursor: pointer;
+    text-decoration: none;
 }
 
-header .pages a{
+header .pages .buttons a{
     text-align: center;
     padding: 10px 12px 10px 12px;
     border-radius: 5px;

@@ -9,4 +9,4 @@ let user = {
     RA: ""
 }
 
-alert("Teste")
+alert("Agora vai")
