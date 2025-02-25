@@ -9,18 +9,52 @@
 <body>
     <header>
         <div class="pages">
-            <p class="logo">Fatecursos</p>
-            <a href="/src/pages/sobrenos.html">Sobre nós</a>
-            <!-- <a href="/src/pages/login.html">Login</a> -->
-            <a href="/src/pages/cadastro.html">Cadastro</a>
+            <p class="logo" onclick="homepage()">Fatecursos</p>
+            <div class="buttons">
+
+                <a href="/src/pages/sobrenos.html">Sobre nós</a>
+                <!-- <a href="/src/pages/login.html">Login</a> -->
+                <a href="/src/pages/cadastro.html">Cadastro</a>
+            </div>
         </div>
-        <div class="perfil"></div>
+        <div class="perfil">
+            <p>Bem vindo bananinha frita!</p>
+            <a>Logoff</a>
+        </div>
     </header>
     <main>
-        <h1></h1>
+        <div class="intro">
+
+            <div class="principal">
+                <h1>Fatecursos</h1>
+                <h3>Tenha aulas de auxílio feitas por fatecanos para fatecanos!</h3>
+            </div>
+            
+            <div class="descricao">
+                <p>A Fatecursos é uma iniciativa feita para auxiliar alunos das Fatec para conseguir compreender os conteúdos de aulas que tenham dificuldade e adquirir auxílio particular se necessário. Prezamos pelo ensino de qualidade e queremos ajudar a todos a entender o conteúdo e desenvolver seus projetos indo sempre um passo além!<br>(Não estamos aqui para substituir o ensino dos professor e sim somente como um auxílio. A melhor fonte de conhecimento é diretamente com nossos professores!)</p>
+            </div>
+
+        </div>
+
+        <div class="inscricao">
+            <div class="cadastro">    
+                <p>Deseja participar da iniciativa?<br> Faça seu cadastro com seu email para fazer parte desse projeto!</p>
+                <button>Cadastre-se</button>
+            </div>
+            <div class="login">
+                <p>Ou, se já tiver um cadastro, faça login na nossa plataforma!</p>
+                <button>Login</button>
+            </div>
+        </div>
     </main>
     <footer>
-
+        <p>[ Esse site foi feito apenas para uma atividade da aula de Desenvolvimento Web II. ]</p>
+        <p>© Todos os direitos reservados</p>
     </footer>
+    <script>
+        function homepage(){
+            window.location = "index.html"
+        }
+    </script>
 </body>
 </html>
