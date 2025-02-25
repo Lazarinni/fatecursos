@@ -17,6 +17,68 @@ a:hover{
     filter: brightness(90%);
 }
 
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+main .principal{
+    background-color: #A3130D;
+    height: 70%;
+    width: 600px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50px;
+}
+
+main .principal .info{
+    height: 25px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .principal .info input{
+    width: 60%;
+    border-radius: 10px;
+}
+
+
+main .principal .info button{
+    height: 35px;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    background-image:url(../src/eye.png);
+    background-size: cover;
+    background-position: center;
+}
+
+main .principal .botoes{
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .principal .botoes a{
+    text-decoration: underline;
+}
+
+main .principal .botoes button{
+    height: 40px;
+    padding: 0px 40px 0px 40px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+
 header{
     margin: 0;
     padding: 8px;
@@ -64,9 +126,10 @@ header .pages .buttons{
     margin-right: 40px;
     color: aliceblue;
     display: flex;
-
     gap: 15px;
 }
+
+
 
 .perfil a{
     text-align: center;
@@ -76,80 +139,13 @@ header .pages .buttons{
     color: aliceblue;
     text-decoration: none;
 }
-main{
-    height: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-}
 
-main .intro{
-    width: 80%;
-    padding-top: 150px;
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-}
 
-main .intro .principal{
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-}
-main .intro .principal h1{
-    font-size: 50px;
-}
 
-main .intro .principal h3 {
-    text-decoration: underline;
-}
-
-main .intro .descricao{
-    width: 40%;
-    background-color: lightgray;
-    border-radius: 25px;
-    padding: 50px;
-    font-size: 18px;
-}
-
-footer{
+footer {
 
     height: 100px;
     background-color: black;
-}
-
-main .inscricao{
-    width: 70%;
-    height: 100%;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-main .inscricao div{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-main .inscricao div p{
-    width: 60%;
-    font-size: 20px;
-}
-
-main .inscricao div button{
-    height: 80px;
-    width: 40%;
-    border-radius: 25px;
-    border: solid black 1px;
-    background-color: #BE2719;
-    color: aliceblue;
-    font-size: 25px;
-}
-
-footer {
     color: white;
     font-size: 12px;
     display: flex;
