@@ -9,4 +9,6 @@ let user = {
     email: "alfredo@gmail.com",
     senha: "123",
     telefone: "11 913383635",
+    cpf: "",
+    RA: ""
 }
