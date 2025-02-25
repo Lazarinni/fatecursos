@@ -1,5 +1,5 @@
 function homepage(){
-    window.location = "../../index.html"
+    window.location = "../index.html"
 }
 
 let fatecanos = JSON.parse(localStorage.getItem("fatecanos"));
