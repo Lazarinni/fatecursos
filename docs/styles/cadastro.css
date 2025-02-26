@@ -37,6 +37,10 @@ main .principal{
     border-radius: 50px;
 }
 
+main .principal input{
+    padding-left: 10px;
+}
+
 main .principal .info{
     height: 25px;
     width: 80%;
@@ -48,6 +52,22 @@ main .principal .info{
 main .principal .info input{
     width: 60%;
     border-radius: 10px;
+}
+
+main .principal label{
+    width: 20%;
+}
+
+main .principal .senha{
+    height: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+main .principal .senha input{
+    margin-right: 20px;
+    width: 60%;
 }
 
 
@@ -62,6 +82,7 @@ main .principal .info button{
 }
 
 main .principal .botoes{
+    width: 80%;
     display: flex;   
     justify-content: space-between;
     align-items: center;

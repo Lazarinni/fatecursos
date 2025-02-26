@@ -18,9 +18,7 @@
                 <a href="../pages/cadastro.html">Cadastro</a>
             </div>
         </div>
-        <div class="perfil">
 
-        </div>
     </header>
     <main>
         <div class="principal">
@@ -49,14 +47,18 @@
 
             <div class="info">
                 <label for="senha">Senha</label>
-                    <input type="text" id="senha">
-                    <button></button>
+                <div class="senha">
+                    <input type="password" id="senha">
+                    <button onclick="verSenha()"></button>
+                </div>
             </div>
             
             <div class="info">
-                <label for="senhaConfirm">Confirme<br>sua senha</label>
-                <input type="text" id="senhaConfirm">
-                <button></button>
+                <label for="senhaConfirm">Confirme sua senha</label>
+                <div class="senha">
+                    <input type="password" id="senhaConfirm">
+                    <button onclick="verConfirmSenha()"></button>
+                </div>
 
             </div>
             
