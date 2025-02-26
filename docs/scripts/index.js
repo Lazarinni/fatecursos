@@ -3,10 +3,10 @@ const header = document.getElementById('header');
 const buttons = document.querySelector('.buttons');
 const main = document.getElementById('main');
 
-if (fatecano == null){
+if (fatecano == null) {
     const cadastrar = document.createElement('a');
-    cadastrar.href = "./pages/cadastro.html";
-    cadastrar.textContent = "Cadastre-se!";
+    cadastrar.onclick = openModal;
+    cadastrar.textContent = "Login";
     buttons.appendChild(cadastrar);
     renderBottom();
 } else {
@@ -26,12 +26,12 @@ if (fatecano == null){
     header.appendChild(perfilDiv);
 }
 
-function logoff(){
+function logoff() {
     sessionStorage.removeItem("fatecano");
     window.location.href = "/docs/index.html"
 }
 
-function renderBottom(){
+function renderBottom() {
     const inscricao = document.createElement('div')
     inscricao.className = "inscricao"
 
@@ -43,10 +43,11 @@ function renderBottom(){
 
     const cadastroButton = document.createElement('button')
     cadastroButton.textContent = "Cadastre-se"
+    cadastroButton.onclick = cadastrar;
 
     cadastro.appendChild(cadastroP)
     cadastro.appendChild(cadastroButton)
-    
+
     const login = document.createElement('div')
     login.className = "login"
 
@@ -54,7 +55,8 @@ function renderBottom(){
     loginP.textContent = "Ou, se já tiver um cadastro, faça login na nossa plataforma!"
 
     const loginButton = document.createElement('button')
-    loginButton.textContent = "Login"
+    loginButton.textContent = "Login";
+    loginButton.onclick = openModal;
 
     login.appendChild(loginP)
     login.appendChild(loginButton)
@@ -63,4 +65,51 @@ function renderBottom(){
     inscricao.appendChild(login)
 
     main.appendChild(inscricao)
+}
+
+function cadastrar() {
+    window.location.href = "pages/cadastro.html"
+}
+
+function openModal() {
+    alert('ui')
+}
+
+
+function openModal() {
+    document.getElementById('loginModal').style.display = 'block';
+}
+
+function closeModal() {
+    document.getElementById('loginModal').style.display = 'none';
+}
+
+function loggar() {
+
+    // Validação do formulário
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        const fatecanos = JSON.parse(localStorage.getItem("fatecanos"));
+
+        for (let I = 0; I < fatecanos.length; I++) {
+            if (fatecanos[I].email === email) {
+                if (fatecanos[I].senha === password) {
+                    sessionStorage.setItem("fatecano", JSON.stringify(fatecanos[I]))
+                    window.location.href = "/docs/index.html"
+                    return;
+                } else {
+                    alert("Senha incorreta, tente novamente")
+                    return;
+                }
+            }
+
+        }
+
+        
+        alert("Usuário não encontrado.")
+    });
 }
