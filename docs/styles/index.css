@@ -149,6 +149,96 @@ main .inscricao div button{
     font-size: 25px;
 }
 
+.pessoal{
+    margin: 50px 0px 50px 0px;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pessoal .top{
+    height: 80px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pessoal .top img{
+    height: 30px;
+}
+
+.pessoal .top button{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pessoal .bot {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.pessoal .bot .left{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+
+.pessoal .bot .left .info{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.pessoal .bot .left .info input{
+    padding-left: 10px;
+    width: 100%;
+}
+
+
+.pessoal .bot .right{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pessoal .bot .info .senha{
+    height: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.pessoal .bot .info label{
+    width: 400px;
+}
+
+
+.pessoal .bot .info button{
+    height: 35px;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    margin-left: 20px;
+    background-image:url(../src/eye.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
 footer {
     color: white;
     font-size: 12px;

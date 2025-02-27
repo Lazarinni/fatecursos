@@ -45,28 +45,28 @@
             
             <div class="info">
                 <label for="nome">Nome completo</label>
-                <input type="text" id="nome">
+                <input type="text" id="nomeCad">
             </div>
 
             <div class="info">
                 <label for="email">Email</label>
-                <input type="text" id="email">
+                <input type="text" id="emailCad">
             </div>
 
             <div class="info">
                 <label for="telefone">Telefone</label>
-                <input type="text" id="telefone">
+                <input type="text" id="telefoneCad">
             </div>
             
             <div class="info">
                 <label for="cpf">CPF</label>
-                <input type="text" id="cpf">
+                <input type="text" id="cpfCad">
             </div>
 
             <div class="info">
                 <label for="senha">Senha</label>
                 <div class="senha">
-                    <input type="password" id="senha">
+                    <input type="password" id="senhaCad">
                     <button onclick="verSenha()"></button>
                 </div>
             </div>
@@ -74,7 +74,7 @@
             <div class="info">
                 <label for="senhaConfirm">Confirme sua senha</label>
                 <div class="senha">
-                    <input type="password" id="senhaConfirm">
+                    <input type="password" id="senhaConfirmCad">
                     <button onclick="verConfirmSenha()"></button>
                 </div>
 
@@ -92,5 +92,26 @@
         <p>[ Esse site foi feito apenas para uma atividade da aula de Desenvolvimento Web II. ]</p>
         <p>© Todos os direitos reservados</p>
     </footer>
+    <script>
+                    const senhaCad = document.getElementById("senhaCad")
+    const senhaConfirmCad = document.getElementById("senhaConfirmCad")
+
+        function verSenha() {
+    if (senhaCad.type === "password") {
+        senhaCad.type = "text";
+    } else {
+        senhaCad.type = "password";
+    }
+}
+
+
+function verConfirmSenha() {
+    if (senhaConfirmCad.type === "password") {
+        senhaConfirmCad.type = "text";
+    } else {
+        senhaConfirmCad.type = "password";
+    }
+}
+    </script>
 </body>
 </html>
