@@ -1,10 +1,33 @@
-import { goToRoot } from './goToRoot'
+import { goToRoot } from './goToRoot.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.close').addEventListener('click', closeModal);
+    document.getElementById('cancelButton').addEventListener('click', closeModal);
+    document.getElementById('loginButton').addEventListener('click', loggar);
+});
 
 let fatecano = JSON.parse(sessionStorage.getItem("fatecano"));
 const header = document.getElementById('header');
 const buttons = document.querySelector('.buttons');
 const main = document.getElementById('main');
+// Adicione estas funções no módulo:
+function verSenhaEdit() {
+    const senhaEdit = document.getElementById("senhaEdit");
+    if (senhaEdit) {
+        senhaEdit.type = senhaEdit.type === "password" ? "text" : "password";
+    }
+}
 
+function verConfirmSenhaEdit() {
+    const senhaConfirmEdit = document.getElementById("senhaConfirmEdit");
+    if (senhaConfirmEdit) {
+        senhaConfirmEdit.type = senhaConfirmEdit.type === "password" ? "text" : "password";
+    }
+}
+
+// verSenhaButton.addEventListener('click', verSenhaEdit);
+// verConfirmSenhaButton.addEventListener('click', verConfirmSenhaEdit);
+document.getElementById('loginForm').addEventListener('submit', loggar)
 
     if (fatecano == null) {
         const cadastrar = document.createElement('a');
@@ -86,10 +109,9 @@ function closeModal() {
     document.getElementById('loginModal').style.display = 'none';
 }
 
-function loggar() {
+function loggar(e) {
+    e.preventDefault();
 
-    // Validação do formulário
-    document.getElementById('loginForm').addEventListener('submit', function (e) {
         e.preventDefault();
 
         const email = document.getElementById('email').value;
@@ -113,8 +135,7 @@ function loggar() {
 
 
         alert("Usuário não encontrado.")
-    });
-}
+    };
 
 function editInfo() {
     const nomeEdit = document.getElementById("nomeEdit")

@@ -4,29 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/cadastro.css">
-    <script defer src="../scripts/cadastro.js"></script>
-    <script defer src="../scripts/index.js"></script>
+    <script type="module" defer src="../scripts/cadastro.js"></script>
+    <script type="module" defer src="../scripts/index.js"></script>
     <title>Cadastro</title>
 </head>
 <body>
     <div id="loginModal" class="modal">
         <div class="modal-content">
-          <span class="close" onclick="closeModal()">&times;</span>
-          <h2>Login</h2>
-          <form id="loginForm">
-            <div class="form-group">
-              <label for="email">E-mail:</label>
-              <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-              <label for="password">Senha:</label>
-              <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit" onclick="loggar()">Entrar</button>
-            <button type="button" onclick="closeModal()">Cancelar</button>
-          </form>
+            <span class="close">&times;</span>            
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" id="loginButton">Entrar</button>
+                <button type="button" id="cancelButton">Cancelar</button>            
+            </form>
         </div>
-      </div>
+    </div>
     <header>
         <div class="pages">
             <a class="logo" href="../index.html">Fatecursos</a>
@@ -82,7 +82,7 @@
             
             <div class="botoes">
                 <p>Ja possui um cadastro? <a onclick="openModal()">Faça login agora!</a></p>
-                <button class="enviar" onclick="cadastrar()">Enviar</button>
+                <button class="enviar">Enviar</button>
             </div>
         </div>
         

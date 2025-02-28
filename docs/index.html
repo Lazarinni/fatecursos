@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/index.css">
-    <script defer src="./scripts/index.js"></script>
+    <script defer type="module" src="./scripts/index.js"></script>
     <title>Fatecursos</title>
 </head>
 
@@ -13,7 +13,7 @@
 
     <div id="loginModal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
+            <span class="close">&times;</span>            
             <h2>Login</h2>
             <form id="loginForm">
                 <div class="form-group">
@@ -24,8 +24,8 @@
                     <label for="password">Senha:</label>
                     <input type="password" id="password" name="password" required>
                 </div>
-                <button type="submit" onclick="loggar()">Entrar</button>
-                <button type="button" onclick="closeModal()">Cancelar</button>
+                <button type="submit" id="loginButton">Entrar</button>
+                <button type="button" id="cancelButton">Cancelar</button>            
             </form>
         </div>
     </div>
@@ -62,32 +62,7 @@
     <footer>
         <p>[ Esse site foi feito apenas para uma atividade da aula de Desenvolvimento Web II. ]</p>
         <p>© Todos os direitos reservados</p>
-    </footer>
-    <script>
-document.addEventListener("DOMContentLoaded", () => {
-    const senhaEdit = document.getElementById("senhaEdit");
-    const SenhaConfirmEdit = document.getElementById("senhaConfirmEdit");
 
-    senhaEdit.addEventListener("click", verSenhaEdit);
-    senhaConfirmEdit.addEventListener("click", verConfirmSenhaEdit);
-});    
-    function verSenhaEdit() {
-        if (senhaEdit.type === "password") {
-            senhaEdit.type = "text";
-        } else {
-            senhaEdit.type = "password";
-        }
-    }
-    
-    
-    function verConfirmSenhaEdit() {
-        if (senhaConfirmEdit.type === "password") {
-            senhaConfirmEdit.type = "text";
-        } else {
-            senhaConfirmEdit.type = "password";
-        }
-    }
-    </script>
 
 </body>
 

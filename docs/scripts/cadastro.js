@@ -1,4 +1,9 @@
-import { goToRoot } from "./goToRoot";
+import { goToRoot } from "./goToRoot.js";
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector(".enviar").addEventListener('click', cadastrar);
+})
 
 function cadastrar() {
     const nome = document.getElementById("nomeCad");
