@@ -10,24 +10,24 @@
 </head>
 
 <body>
-    <div id="loginModal" class="modal">
-        <div class="modal-content">
-          <span class="close" onclick="closeModal()">&times;</span>
-          <h2>Login</h2>
-          <form id="loginForm">
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>            
+        <h2>Login</h2>
+        <form id="loginForm">
             <div class="form-group">
-              <label for="email">E-mail:</label>
-              <input type="email" id="email" name="email" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
             </div>
             <div class="form-group">
-              <label for="password">Senha:</label>
-              <input type="password" id="password" name="password" required>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
             </div>
-            <button type="submit" onclick="loggar()">Entrar</button>
-            <button type="button" onclick="closeModal()">Cancelar</button>
-          </form>
-        </div>
-      </div>
+            <button type="submit" id="loginButton">Entrar</button>
+            <button type="button" id="cancelButton">Cancelar</button>            
+        </form>
+    </div>
+</div>
     <header>
         <div class="pages">
             <a class="logo" href="../index.html">Fatecursos</a>
@@ -40,8 +40,16 @@
 
     </header>
     <main>
-        <h1>Sobre nós</h1>
-    </main>
+      <h1>Sobre nós</h1>
+      <div class="descricao">
+      <p class="sobrenozes">A Fatecursos é uma iniciativa criada por alunos da Fatec para alunos da Fatec. Nosso objetivo é oferecer cursos complementares e reforço acadêmico, ministrados por estudantes que desejam compartilhar conhecimento e ajudar seus colegas a crescerem academicamente e profissionalmente.
+
+          Acreditamos que o aprendizado vai além da sala de aula e que a troca de experiências entre alunos pode ser uma ferramenta poderosa para a construção do conhecimento. Nossos cursos abrangem diversas áreas, desde programação e design até gestão e comunicação, sempre com foco na qualidade e acessibilidade.
+          
+          Seja para reforçar um conteúdo que ficou difícil ou para explorar novos conhecimentos, o Fatecursos é o seu espaço de aprendizado colaborativo! 🚀📚
+      </p>
+      </div>
+  </main>
     <footer>
         <p>[ Esse site foi feito apenas para uma atividade da aula de Desenvolvimento Web II. ]</p>
         <p>© Todos os direitos reservados</p>
