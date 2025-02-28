@@ -1,0 +1,247 @@
+body{
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+button:hover{
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+a:hover{
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+main .principal{
+    background-color: #A3130D;
+    height: 70%;
+    width: 600px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50px;
+}
+
+main .principal input{
+    padding-left: 10px;
+}
+
+main .principal .info{
+    height: 25px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .principal .info input{
+    width: 60%;
+    border-radius: 10px;
+}
+
+main .principal label{
+    width: 20%;
+}
+
+main .principal .senha{
+    height: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+main .principal .senha input{
+    margin-right: 20px;
+    width: 60%;
+}
+
+
+main .principal .info button{
+    height: 35px;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    background-image:url(../src/eye.png);
+    background-size: cover;
+    background-position: center;
+}
+
+main .principal .botoes{
+    width: 80%;
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .principal .botoes a{
+    text-decoration: underline;
+}
+
+main .principal .botoes button{
+    height: 40px;
+    padding: 0px 40px 0px 40px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+
+header{
+    margin: 0;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #A3130D;
+}
+
+header .pages{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+
+header .pages .logo{
+    font-size: 1.5em;
+    color: aliceblue;
+    margin-left: 25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+header .pages .buttons a{
+    text-align: center;
+    padding: 10px 12px 10px 12px;
+    border-radius: 5px;
+    background-color: #BE2719;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+header .pages .buttons{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.perfil {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 40px;
+    color: aliceblue;
+    display: flex;
+    gap: 15px;
+}
+
+
+
+.perfil a{
+    text-align: center;
+    padding: 10px 12px 10px 12px;
+    border-radius: 5px;
+    background-color: #BE2719;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+
+footer {
+
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    background-color:#BE2719;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="button"] {
+    background-color: aliceblue;
+    color: #BE2719;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script defer src="./scripts/index.js"></script>
+    <title>Fatecursos</title>
+</head>
+
+<body>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" onclick="loggar()">Entrar</button>
+                <button type="button" onclick="closeModal()">Cancelar</button>
+            </form>
+        </div>
+    </div>
+
+    <header id="header">
+        <div class="pages">
+            <a class="logo" href="index.html">Fatecursos</a>
+            <div class="buttons">
+
+                <a href="./pages/sobrenos.html">Sobre nós</a>
+                <!-- <a href="./docs/pages/login.html">Login</a> -->
+            </div>
+        </div>
+    </header>
+    <div class="fotinha">         
+        <img src="./src/fatec-diadema.jpg" width="850">     
+    </div>
+    <main id="main">
+        <div class="intro">
+
+            <div class="principal">
+                <h1>Fatecursos</h1>
+                <h3>Tenha aulas de auxílio feitas por fatecanos para fatecanos!</h3>
+            </div>
+
+            <div class="descricao">
+                <p>A Fatecursos é uma iniciativa feita para auxiliar alunos das Fatec para conseguir compreender os
+                    conteúdos de aulas que tenham dificuldade e adquirir auxílio particular se necessário. Prezamos pelo
+                    ensino de qualidade e queremos ajudar a todos a entender o conteúdo e desenvolver seus projetos indo
+                    sempre um passo além!<br>(Não estamos aqui para substituir o ensino dos professor e sim somente como
+                    um auxílio. A melhor fonte de conhecimento é diretamente com nossos professores!)</p>
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+        <p>[ Esse site foi feito apenas para uma atividade da aula de Desenvolvimento Web II. ]</p>
+        <p>© Todos os direitos reservados</p>
+    </footer>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const senhaEdit = document.getElementById("senhaEdit");
+    const SenhaConfirmEdit = document.getElementById("senhaConfirmEdit");
+
+    senhaEdit.addEventListener("click", verSenhaEdit);
+    senhaConfirmEdit.addEventListener("click", verConfirmSenhaEdit);
+});    
+    function verSenhaEdit() {
+        if (senhaEdit.type === "password") {
+            senhaEdit.type = "text";
+        } else {
+            senhaEdit.type = "password";
+        }
+    }
+    
+    
+    function verConfirmSenhaEdit() {
+        if (senhaConfirmEdit.type === "password") {
+            senhaConfirmEdit.type = "text";
+        } else {
+            senhaConfirmEdit.type = "password";
+        }
+    }
+    </script>
+
+</body>
+
+</html>

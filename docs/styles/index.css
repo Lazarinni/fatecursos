@@ -1,0 +1,474 @@
+*{
+    transition: all 0.3s ease-in-out;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+button:hover{
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+.buttons {
+    text-align: center;
+    background-color: #BE2719;
+    color: aliceblue;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover{
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    animation: fadeIn 1s ease-in-out;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #A3130D;
+}
+
+header .pages{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+
+header .pages .logo{
+    font-size: 1.5em;
+    color: aliceblue;
+    margin-left: 25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+header .pages .buttons a{
+    text-align: center;
+    padding: 10px 12px 10px 12px;
+    border-radius: 5px;
+    background-color: #BE2719;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+header .pages .buttons{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.fotinha {
+    position:relative;
+    margin-top: 58px;
+    justify-content: left;
+    height: 60%;
+    width: 60%;
+}
+
+.perfil {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 40px;
+    color: aliceblue;
+    display: flex;
+
+    gap: 15px;
+}
+
+.perfil a{
+    text-align: center;
+    padding: 10px 12px 10px 12px;
+    border-radius: 5px;
+    background-color: #BE2719;
+    color: aliceblue;
+    text-decoration: none;
+}
+main{
+    height: 80%;
+    flex: 1;
+    margin-top: 60px;
+    position: absolute;
+    padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+main .intro{
+    width: 80%;
+    padding-top: 1px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+main .intro .principal{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+main .intro .principal h1{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+main .intro .principal h3 {
+    text-decoration: none;
+    color: black;
+}
+
+main .intro .descricao{
+    width: 40%;
+    flex: 1;
+    background-color: lightgray;
+    border-radius: 25px;
+    padding: 35px;
+    font-size: 18px;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    position: relative  ;
+    background-color: black;
+}
+
+main .inscricao{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    margin-top: 450px;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main .inscricao div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .inscricao div p{
+    width: 60%;
+    font-size: 20px;
+}
+
+main .inscricao div button{
+    height: 80px;
+    width: 40%;
+    border-radius: 25px;
+    border: solid black 1px;
+    background-color: #BE2719;
+    color: aliceblue;
+    font-size: 25px;
+}
+
+.pessoal{
+    margin: 50px 0px 50px 0px;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pessoal .top{
+    height: 80px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pessoal .top img{
+    height: 30px;
+}
+
+.pessoal .top button{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pessoal .bot {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.pessoal .bot .left{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+
+.pessoal .bot .left .info{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.pessoal .bot .left .info input{
+    padding-left: 10px;
+    width: 100%;
+}
+
+
+.pessoal .bot .right{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pessoal .bot .info .senha{
+    height: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.pessoal .bot .info label{
+    width: 400px;
+}
+
+
+.pessoal .bot .info button{
+    height: 35px;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    margin-left: 20px;
+    background-image:url(../src/eye.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+footer {
+    color: white;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+<<<<<<< HEAD
+=======
+    min-height: 80px;
+    padding: 10px;
+}
+
+@media (max-width: 768px){
+    main .intro {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    main .intro .descricao {
+        width: 90%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pessoal{
+    margin: 50px 0px 50px 0px;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pessoal .top{
+    height: 80px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pessoal .top img{
+    height: 30px;
+}
+
+.pessoal .top button{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pessoal .bot {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.pessoal .bot .left{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+
+.pessoal .bot .left .info{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.pessoal .bot .left .info input{
+    padding-left: 10px;
+    width: 100%;
+}
+
+
+.pessoal .bot .right{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pessoal .bot .info .senha{
+    height: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.pessoal .bot .info label{
+    width: 400px;
+}
+
+
+.pessoal .bot .info button{
+    height: 35px;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    margin-left: 20px;
+    background-image:url(../src/eye.png);
+    background-size: cover;
+    background-position: center;
+>>>>>>> 6e8d895 (Feita as alterações)
+}
+
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    background-color:#BE2719;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="button"] {
+    background-color: aliceblue;
+    color: #BE2719;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
