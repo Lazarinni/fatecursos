@@ -1,3 +1,5 @@
+import { goToRoot } from "./goToRoot";
+
 function cadastrar() {
     const nome = document.getElementById("nomeCad");
     const email = document.getElementById("emailCad");
@@ -49,5 +51,5 @@ function cadastrar() {
     localStorage.setItem("fatecanos", JSON.stringify(fatecanos));
     sessionStorage.setItem("fatecano", JSON.stringify(user));
 
-    window.location.href = "../index.html";
+    goToRoot()
 }

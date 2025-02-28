@@ -1,9 +1,9 @@
+import { goToRoot } from './goToRoot'
+
 let fatecano = JSON.parse(sessionStorage.getItem("fatecano"));
 const header = document.getElementById('header');
 const buttons = document.querySelector('.buttons');
 const main = document.getElementById('main');
-
-
 
 
     if (fatecano == null) {
@@ -35,7 +35,7 @@ const main = document.getElementById('main');
 
 function logoff() {
     sessionStorage.removeItem("fatecano");
-    window.location.href = "/index.html"
+    goToRoot();
 }
 
 function renderBottom() {
@@ -101,7 +101,7 @@ function loggar() {
             if (fatecanos[I].email === email) {
                 if (fatecanos[I].senha === password) {
                     sessionStorage.setItem("fatecano", JSON.stringify(fatecanos[I]))
-                    window.location.href = "/index.html"
+                    goToRoot()
                     return;
                 } else {
                     alert("Senha incorreta, tente novamente")
@@ -171,9 +171,8 @@ const senhaConfirmEdit = document.getElementById("senhaConfirmEdit")
     sessionStorage.setItem("fatecano", JSON.stringify(user));
 
     alert("Informações alteradas com sucesso")
-
-    window.location.href = "/index.html"
-
+    
+    goToRoot();
 }
 
 function deleteInfo() {
@@ -198,7 +197,7 @@ function deleteInfo() {
     sessionStorage.clear();
 
     alert("Conta apagada com sucesso")
-    window.location.href = "/index.html";
+    goToRoot();
 
 }
 
